@@ -7,8 +7,8 @@ export function Header() {
       <div>
         <div className='flex flex-col items-center'>
           <Avatar />
-          <h1 className='font-medium text-xl mt-2'>Andres Argote 🇻🇪🇮🇹</h1>
-          <span className='font-ligth text-sm text-gray-500'>@andresargotedev</span>
+          <h1 className='mt-2 text-xl font-medium text-gray-900'>Andres Argote 🇻🇪🇮🇹</h1>
+          <span className='text-sm text-gray-500 font-ligth'>@andresargotedev</span>
           <div className='flex gap-3 my-4'>
             <a
               href='https://twitter.com/andresargotedev'
