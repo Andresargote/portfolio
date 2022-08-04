@@ -3,7 +3,7 @@ import Image from 'next/image';
 export function Avatar() {
   return (
     <div className='flex flex-col items-center'>
-      <div className='rounded w-80px h-80px transform transition duration-500 hover:scale-125'>
+      <div className='transition duration-500 transform rounded w-80px h-80px hover:scale-125'>
         <Image
           src='https://avatars.githubusercontent.com/u/42123859?v=4'
           alt='Andres Argote'
