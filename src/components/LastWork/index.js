@@ -1,9 +1,12 @@
+import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image';
 
 export function LastWork() {
+  const { t } = useTranslation('home');
+
   return (
     <section>
-      <h2 className='my-4 font-medium text-gray-900 text-md'>Último trabajo:</h2>
+      <h2 className='my-4 font-medium text-gray-900 text-md'>{t('lastWork')}</h2>
       <div className='container flex'>
         <div className='mr-2 w-80px h-80px '>
           <Image
@@ -27,7 +30,7 @@ export function LastWork() {
             </a>
           </h3>
           <p>
-            Posición: <b>Full stack developer.</b>
+            {t('position')} <b>Full stack developer.</b>
           </p>
           <p>Stack: Figma, Next.js, Ant Design, Firebase, Node.js y MongoDB.</p>
         </div>

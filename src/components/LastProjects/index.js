@@ -1,11 +1,12 @@
+import useTranslation from 'next-translate/useTranslation';
 import { BsGithub } from 'react-icons/bs';
 
 export function LastProjects() {
+  const { t } = useTranslation('home');
+
   return (
     <section>
-      <h2 className='my-4 font-medium text-gray-900 text-md'>
-        Últimos proyectos personales:
-      </h2>
+      <h2 className='my-4 font-medium text-gray-900 text-md'>{t('lastProjects')}</h2>
 
       <div className='container flex'>
         <div className='text-sm text-gray-900 font-ligth '>

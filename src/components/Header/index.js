@@ -1,7 +1,10 @@
+import useTranslation from 'next-translate/useTranslation';
 import { Avatar } from '../Avatar';
 import { BsTwitter, BsLinkedin, BsGithub } from 'react-icons/bs';
 
 export function Header() {
+  const { t } = useTranslation('home');
+
   return (
     <header>
       <div>
@@ -33,11 +36,12 @@ export function Header() {
             </a>
           </div>
         </div>
-        <p className='text-sm text-gray-900 font-ligth '>
+        {/*<p className='text-sm text-gray-900 font-ligth '>
           Full stack javascript developer con +2 años de experiencia desarrollando
           aplicaciones con tecnologías como <b>HTML,</b> <b>CSS,</b> <b>JavaScript,</b>{' '}
           <b>ReactJS,</b> <b>NextJS,</b> <b>NodeJS,</b> <b>Express</b> y <b>MongoDB</b>.
-        </p>
+  </p>*/}
+        <p className='text-sm text-gray-900 font-ligth '>{t('about-me')}</p>
       </div>
     </header>
   );

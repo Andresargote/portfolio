@@ -8,15 +8,18 @@ import { Select } from '../components/Select';
 export default function Home() {
   const options = [
     {
-      value: '🇻🇪 Español',
+      label: '🇻🇪 Español',
+      value: 'es',
       id: 1,
     },
     {
-      value: '🇺🇸 English',
+      label: '🇺🇸 English',
+      value: 'en',
       id: 2,
     },
     {
-      value: '🇮🇹 Italiano',
+      label: '🇮🇹 Italiano',
+      value: 'it',
       id: 3,
     },
   ];
